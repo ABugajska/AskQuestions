@@ -1,0 +1,30 @@
+{
+  "name": "ask-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-bower-files": "^0.2.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-haml": "^0.1.6",
+    "gulp-html2js": "^0.4.2",
+    "gulp-main-bower-files": "^1.5.2",
+    "gulp-ng-html2js": "^0.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-watch": "^4.3.8",
+    "gulp-webserver": "^0.9.1",
+    "main-bower-files": "^2.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agnieszka Bugajska",
+  "license": "ISC"
+}

@@ -1,0 +1,8 @@
+%a(ui-sref="list") back
+%h1 {{$ctrl.user.name}}
+%p Recent questions:
+%ul
+  %li(ng-repeat="question in $ctrl.user.questions")
+    %button.show-btn(ng-click="showAnswer = !showAnswer")
+      %p {{question.question}}
+    %p.answer(ng-show="showAnswer") {{question.answer}}

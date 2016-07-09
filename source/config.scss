@@ -1,0 +1,15 @@
+$color-default: #fff;
+$color-dark: #000;
+$color-link: #3B5998;
+
+.show-btn {
+  background-color: $color-default;
+  border: none;
+  text-decoration: underline;
+  color: $color-link;
+  padding: 0;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
