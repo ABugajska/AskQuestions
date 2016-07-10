@@ -2,11 +2,12 @@
   'use strict';
   angular.module('AskMe', [
     'template',
-    'questions',
+    'users',
     'questionsList',
     'usersList',
     'ui.router',
-    'user'
+    'user',
+    'user.form'
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     //$urlRouterProvider.otherwise('/home');

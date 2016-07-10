@@ -1,0 +1,6 @@
+%form(ng-submit="$ctrl.addQuestion({question: addQuestion})")
+
+  %div
+    %input(placeholder="ask a question" ng-model="addQuestion")
+    %button submit
+  %p(ng-bind="addQuestion")

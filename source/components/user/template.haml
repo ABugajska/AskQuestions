@@ -6,3 +6,5 @@
     %button.show-btn(ng-click="showAnswer = !showAnswer")
       %p {{question.question}}
     %p.answer(ng-show="showAnswer") {{question.answer}}
+
+%user-form(add-question="$ctrl.addQuestion")

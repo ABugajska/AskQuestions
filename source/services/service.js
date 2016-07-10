@@ -1,7 +1,7 @@
 (function(){
   'use strict';
-  angular.module('questions', [])
-    .service('Questions', function($http){
+  angular.module('users', [])
+    .service('Users', function($http){
       var that = this;
       that.getAllData = function(){
         return $http.get('main.json');
@@ -16,5 +16,6 @@
           }
         });
       };
+
     });
 })();
