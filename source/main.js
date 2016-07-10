@@ -3,7 +3,7 @@
   angular.module('AskMe', [
     'template',
     'users',
-    'questionsList',
+    'usersList',
     'usersList',
     'ui.router',
     'user',
@@ -15,7 +15,7 @@
       .state('list', {
         url: '/',
         templateUrl: 'containers/home/index.html',
-        controller: 'QuestionsListCtrl as ctrl'
+        controller: 'UsersListCtrl as ctrl'
       })
       .state('user', {
         url: '/user/:id',
