@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('singleUser', ['user.form'])
+  angular.module('singleUser', ['user.form', 'search'])
   .component('singleUser', {
     bindings: {
       user: '<'
@@ -15,6 +15,7 @@
         var index = ctrl.user.questions.indexOf(question);
         ctrl.user.questions.splice(index, 1);
       };
+      ctrl.searchQuestion = "";
     }
   });
 })();

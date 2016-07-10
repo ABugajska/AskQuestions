@@ -1,6 +1,9 @@
-%form(ng-submit="$ctrl.addQuestion({question: addQuestion})")
+
+%form(name="addQuestionForm" ng-submit="$ctrl.addQuestion({question: addQuestion})")
 
   %div
-    %input(placeholder="ask a question" ng-model="addQuestion")
+    %input(name="questionInput" placeholder="ask a question" ng-model="addQuestion" required)
     %button submit
+    %div(ng-messages="addQuestionForm.questionInput.$error" role = "alert")
+      %div(ng-message="required") Please enter a value for this field.
   %p(ng-bind="addQuestion")

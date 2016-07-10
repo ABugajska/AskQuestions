@@ -4,8 +4,10 @@
     'template',
     'users',
     'usersList',
-    'usersList',
+    'home',
+    'search',
     'ui.router',
+    'ngMessages',
     'user',
     'user.form'
   ])

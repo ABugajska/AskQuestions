@@ -6,5 +6,6 @@
     Users.getSingleUserData($stateParams.id).then(function(user){
       ctrl.user = user;
     });
+    
   });
 })();

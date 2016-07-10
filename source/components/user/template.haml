@@ -1,8 +1,9 @@
 %a(ui-sref="list") back
 %h1 {{$ctrl.user.name}}
+%search(search="$ctrl.searchQuestion")
 %p Recent questions:
 %ul
-  %li(ng-repeat="question in $ctrl.user.questions")
+  %li(ng-repeat="question in $ctrl.user.questions | filter: $ctrl.searchQuestion")
     %button.show-btn(ng-click="showAnswer = !showAnswer")
       %p {{question.question}}
     %div.answer(ng-show="showAnswer")

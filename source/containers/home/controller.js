@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('usersList', ['template', 'users', 'singleUser'])
+  angular.module('home', ['template', 'users', 'singleUser', 'search'])
   .controller('UsersListCtrl', function(Users){
     var ctrl = this;
     Users.getAllData().then(function(response){
