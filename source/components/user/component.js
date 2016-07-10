@@ -11,6 +11,9 @@
       ctrl.addQuestion = function(question){
         ctrl.user.questions.push(question);
       };
+      ctrl.deleteQuestion = function(question){
+        ctrl.user.questions.splice(question, 1);
+      };
     }
   });
 })();
