@@ -12,7 +12,8 @@
         ctrl.user.questions.push(question);
       };
       ctrl.deleteQuestion = function(question){
-        ctrl.user.questions.splice(question, 1);
+        var index = ctrl.user.questions.indexOf(question);
+        ctrl.user.questions.splice(index, 1);
       };
     }
   });
