@@ -12,6 +12,7 @@
       ctrl.showMore = function(){
         ctrl.limit = ctrl.limit + 5;
       };
+      ctrl.searchUser = "";
     }
   });
 })();

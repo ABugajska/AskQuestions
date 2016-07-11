@@ -1,5 +1,5 @@
 %h2 Recent questions
 %ul
-  %li(ng-repeat="question in $ctrl.questions | limitTo: 5 | orderBy: 'date' : reverse")
+  %li(ng-repeat="question in $ctrl.questions | orderBy: 'date':true | limitTo: 5")
     %p {{question.question.title}}&nbsp;
       %b {{question.question.date}}

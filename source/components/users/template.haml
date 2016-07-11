@@ -1,6 +1,7 @@
 %a(ui-sref="home") home
 %h2 Ask me!
+%search(search="$ctrl.searchUser")
 %ul
-  %li(ng-repeat="user in $ctrl.users | limitTo: $ctrl.limit")
+  %li(ng-repeat="user in $ctrl.users | limitTo: $ctrl.limit | filter: $ctrl.searchUser")
     %a(ui-sref="user({id:user.id})"){{ user.name }}&nbsp;({{user.questions.length}})
 %button(ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <=  $ctrl.users.length") show more users
