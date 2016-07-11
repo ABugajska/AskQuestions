@@ -1,3 +1,5 @@
+%a(ui-sref="home") home
+%h2 Ask me!
 %ul
   %li(ng-repeat="user in $ctrl.users | limitTo: $ctrl.limit")
     %a(ui-sref="user({id:user.id})"){{ user.name }}&nbsp;({{user.questions.length}})

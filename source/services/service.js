@@ -16,6 +16,12 @@
           }
         });
       };
-
+      that.getAllQuestions = function(question){
+        return that.getAllData().then(function(response){
+          return response.data.map(function(user){
+            return user.questions;
+          });
+        });
+      };
     });
 })();

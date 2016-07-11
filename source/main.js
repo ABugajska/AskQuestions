@@ -4,6 +4,7 @@
     'template',
     'users',
     'usersList',
+    'recentQuestions',
     'home',
     'search',
     'ui.router',
@@ -11,6 +12,7 @@
     'user',
     'list',
     'user.form'
+
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     //$urlRouterProvider.otherwise('/home');

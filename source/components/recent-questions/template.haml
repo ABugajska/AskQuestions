@@ -1,0 +1,4 @@
+%h2 hello
+%ul
+  %li(ng-repeat="question in $ctrl.questions | limitTo: 5")
+    {{question.question.title}}

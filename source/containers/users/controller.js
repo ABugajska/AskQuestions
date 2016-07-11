@@ -5,6 +5,7 @@
     var ctrl = this;
     Users.getAllData().then(function(response){
       ctrl.users = response.data;
+      console.log(response.data);
     });
   });
 })();
