@@ -1,0 +1,14 @@
+.header__menu {
+  background-color: #7CB9E8;
+  margin: 0;
+  padding: 20px;
+  li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    a {
+      text-transform: uppercase;
+      color: $color-default;
+      text-decoration: none;
+    }
+  }
+}

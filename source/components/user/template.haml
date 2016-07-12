@@ -1,7 +1,6 @@
 %a(ui-sref="list") back
 %h1 {{$ctrl.user.name}}
 %search(search="$ctrl.searchQuestion")
-%p Recent questions:
 %ul
   %li(ng-repeat="question in $ctrl.user.questions | filter: $ctrl.searchQuestion")
     %a.show-btn(ui-sref="question({id:question.id})")

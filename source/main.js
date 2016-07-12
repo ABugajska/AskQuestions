@@ -13,7 +13,8 @@
     'ngMessages',
     'user',
     'list',
-    'user.form'
+    'user.form',
+    'header'
 
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {

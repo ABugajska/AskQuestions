@@ -2,6 +2,10 @@ $color-default: #fff;
 $color-dark: #000;
 $color-link: #3B5998;
 
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
 .show-btn {
   background-color: $color-default;
   border: none;
