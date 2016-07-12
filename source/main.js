@@ -5,6 +5,7 @@
     'users',
     'usersList',
     'recentQuestions',
+    'question',
     'home',
     'search',
     'ui.router',
@@ -31,6 +32,11 @@
         url: '/user/:id',
         templateUrl: 'containers/user/index.html',
         controller: 'UserCtrl as ctrl'
+      })
+      .state('question', {
+        url: '/question/:id',
+        templateUrl: 'containers/question/index.html',
+        controller: 'QuestionCtrl as ctrl'
       })
     $locationProvider.html5Mode(true);
   });

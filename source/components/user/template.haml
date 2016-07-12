@@ -4,10 +4,9 @@
 %p Recent questions:
 %ul
   %li(ng-repeat="question in $ctrl.user.questions | filter: $ctrl.searchQuestion")
-    %button.show-btn(ng-click="showAnswer = !showAnswer")
-      %p {{question.question.title}}
-    %div.answer(ng-show="showAnswer")
-      %p {{question.answer}}
+    %a.show-btn(ui-sref="question({id:question.id})")
+      %p {{question.title}}
+
     %button(ng-click="$ctrl.deleteQuestion(question)") delete
 
 %user-form(add-question="$ctrl.addQuestion")

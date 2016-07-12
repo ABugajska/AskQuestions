@@ -4,7 +4,7 @@
   .controller('MainCtrl', function(Users){
     var ctrl = this;
     Users.getAllQuestions().then(function(questions){
-      ctrl.questions = _.flatten(questions);
+      ctrl.questions = questions;
       console.log(ctrl.questions);
     });
   });

@@ -16,11 +16,26 @@
           }
         });
       };
+      that.getSingleQuestionData = function(id){
+        return that.getAllQuestions().then(function(response){
+          for (var i = 0; i < response.data.length; i++) {
+            var currentQuestion = response.data[i];
+            if (currentQuestion.id === id) {
+              return currentQuestion;
+            }
+          }
+        });
+      };
       that.getAllQuestions = function(question){
         return that.getAllData().then(function(response){
-          return response.data.map(function(user){
+          return _.flatten(response.data.map(function(user){
             return user.questions;
-          });
+          }));
+        }).then(function(questions){
+          for (var i = 0; i < questions.length; i++) {
+            questions[i].date = new Date(questions[i].date);
+          }
+          return questions;
         });
       };
     });
