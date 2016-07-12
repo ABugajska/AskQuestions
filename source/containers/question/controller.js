@@ -1,11 +1,9 @@
 (function(){
   'use strict';
-  angular.module('question', ['template', 'users', 'singleUser'])
+  angular.module('question', ['template', 'users', 'singleUser', 'singleQuestion'])
   .controller('QuestionCtrl', function(Users, $stateParams){
     var ctrl = this;
     Users.getAllQuestions().then(function(questions){
-      ctrl.questions = questions;
-      console.log(ctrl.questions);
     });
     Users.getSingleQuestionData($stateParams.id).then(function(question){
       ctrl.question = question;

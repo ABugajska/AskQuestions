@@ -5,6 +5,7 @@
     'users',
     'usersList',
     'recentQuestions',
+    'singleQuestion',
     'question',
     'home',
     'search',

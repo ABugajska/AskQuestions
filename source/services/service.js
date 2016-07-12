@@ -17,9 +17,9 @@
         });
       };
       that.getSingleQuestionData = function(id){
-        return that.getAllQuestions().then(function(response){
-          for (var i = 0; i < response.data.length; i++) {
-            var currentQuestion = response.data[i];
+        return that.getAllQuestions().then(function(questions){
+          for (var i = 0; i < questions.length; i++) {
+            var currentQuestion = questions[i];
             if (currentQuestion.id === id) {
               return currentQuestion;
             }
