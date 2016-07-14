@@ -5,8 +5,12 @@
     {{$ctrl.question.title}}
 %ul.answers__list
   %li.answers__list--item(ng-repeat="answer in $ctrl.question.answer")
-    {{answer.content}}&nbsp;
+    %div
+      {{answer.content}}&nbsp;
 
-    %p.text-right
-      %small.answers__list--item-name by {{answer.name}}&nbsp;&middot;&nbsp;
-        %b {{answer.date | date }}
+      %p.text-right
+        %small.answers__list--item-name by {{answer.name}}&nbsp;&middot;&nbsp;
+          %b {{answer.date | date }}
+      %button.button-main(ng-click="showDiv = !showDiv") more
+    %div(ng-show="showDiv")
+      %span rating/likes/other actions
