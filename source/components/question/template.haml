@@ -1,4 +1,10 @@
-%h2
-  %span {{$ctrl.question.date | date}}&nbsp;&middot;&nbsp; 
+-# %a(ui-sref="user({id: user.id})") back
+%h2.main__header
+  %span {{$ctrl.question.date | date}}&nbsp;&middot;&nbsp;
   {{$ctrl.question.title}}
-%p {{$ctrl.question.answer}}
+%ul.answers__list
+  %li.answers__list--item(ng-repeat="answer in $ctrl.question.answer")
+    {{answer.content}}&nbsp;
+    %b {{answer.date | date }}
+    %p.text-right
+      %small.answers__list--item-name by {{answer.name}}

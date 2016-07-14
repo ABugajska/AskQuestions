@@ -1,4 +1,4 @@
-%h2 Ask me!
+%h2.main__header Ask me!
 %search(search="$ctrl.searchUser")
 %ul
   %li(ng-repeat="user in $ctrl.users | filter: $ctrl.searchUser | limitTo: $ctrl.limit")

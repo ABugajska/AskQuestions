@@ -1,6 +1,4 @@
-$color-default: #fff;
-$color-dark: #000;
-$color-link: #3B5998;
+
 
 body {
   margin: 0;
@@ -16,4 +14,33 @@ body {
     outline: none;
     border: none;
   }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+a {
+  color: $color-link;
+}
+
+.main__header {
+  color: $main-red;
+  display: inline-block;
+  margin: 0;
 }

@@ -1,0 +1,26 @@
+.answers__list {
+  padding-left: 20px;
+}
+.answers__list--item {
+  position: relative;
+  color: $main-text;
+  padding: 10px 0;
+  border-bottom: 1px solid $main-text;
+}
+.answers__list--item:before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: -20px;
+  background-color: $main-red;
+  bottom: 0;
+  width: 7px;
+  height: 100%;
+}
+
+.answers__list--item:hover:before {
+  background-color: $color-dark;
+}
+.answers__list--item-name {
+  text-decoration: underline;
+}

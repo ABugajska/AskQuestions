@@ -1,4 +1,4 @@
-%h2 Recent questions
+%h2.main__header Recent questions
 %ul
   %li(ng-repeat="question in $ctrl.questions | orderBy: 'date':true | limitTo: 5" )
     %a(ui-sref="question({id:question.id})")
