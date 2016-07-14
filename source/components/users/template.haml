@@ -3,4 +3,4 @@
 %ul
   %li(ng-repeat="user in $ctrl.users | filter: $ctrl.searchUser | limitTo: $ctrl.limit")
     %a(ui-sref="user({id:user.id})"){{ user.name }}&nbsp;({{user.questions.length}})
-%button(ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <=  $ctrl.users.length") show more users
+%button.button-main(ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <=  $ctrl.users.length") show more users

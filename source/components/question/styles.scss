@@ -6,6 +6,7 @@
   color: $main-text;
   padding: 10px 0;
   border-bottom: 1px solid $main-text;
+  min-height: 30px;
 }
 .answers__list--item:before {
   position: absolute;

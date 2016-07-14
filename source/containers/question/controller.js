@@ -7,6 +7,7 @@
     Users.getSingleQuestionData($stateParams.id).then(function(question){
       ctrl.question = question;
       console.log(ctrl.question);
+
     });
   });
 })();

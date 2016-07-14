@@ -1,11 +1,11 @@
 %a(ui-sref="list") back
 %h1 {{$ctrl.user.name}}
 %search(search="$ctrl.searchQuestion")
-%ul
-  %li(ng-repeat="question in $ctrl.user.questions | filter: $ctrl.searchQuestion")
-    %a.show-btn(ui-sref="question({id:question.id})")
-      %p {{question.title}}
+%ul.answers__list
+  %li.answers__list--item(ng-repeat="question in $ctrl.user.questions | filter: $ctrl.searchQuestion")
+    %a(ui-sref="question({id:question.id})")
+      %p.answers__list--item-title {{question.title}}
 
-    %button(ng-click="$ctrl.deleteQuestion(question)") delete
+    %button.button-main.button-delete(ng-click="$ctrl.deleteQuestion(question)") delete
 
 %user-form(add-question="$ctrl.addQuestion")

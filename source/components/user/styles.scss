@@ -8,3 +8,23 @@ ul {
   margin: 0;
   margin-top: 1px;
 }
+
+.answers__list--item-title {
+  display: inline-block;
+  margin: 0;
+}
+
+.button-delete {
+  float: right;
+}
+
+@media all and (max-width: 992px) {
+  .button-delete {
+    display: block;
+    float: none;
+  }
+  .answers__list--item-title {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

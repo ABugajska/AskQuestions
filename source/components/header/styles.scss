@@ -1,7 +1,12 @@
 .header__container {
-  background-color: #7CB9E8;
+  background: rgba(124, 185, 232, 0.9);
   margin: 0;
   padding: 20px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .header__menu {

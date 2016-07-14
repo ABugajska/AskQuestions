@@ -5,6 +5,6 @@
     bindings: {
       question: '<'
     },
-    templateUrl: 'components/question/template.html',
+    templateUrl: 'components/question/template.html'
   });
 })();

@@ -2,5 +2,7 @@
 %ul
   %li(ng-repeat="question in $ctrl.questions | orderBy: 'date':true | limitTo: 5" )
     %a(ui-sref="question({id:question.id})")
-      %p {{question.title}}&nbsp;
-        %b {{ question.date | date }}
+
+      %p
+        %b {{ question.date | date }}&nbsp;
+        %span {{question.title}}
